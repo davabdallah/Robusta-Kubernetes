@@ -1,5 +1,29 @@
-# Here you can find the steps to compelete the task
+# The steps to compelete the task
+
 ## The steps of creating sample web application (Php,MySQL, and Adminer)
+### Localy First
+- First step was trying to deploy the application on my local machine
+- I hvae used Docker desktop and VSC.
+
+##### - The steps on my local Machine
+
+- Create a directory for your PHP application
+- Create [DockerFile]() for PHP
+- Create index.php file in the same directory with Dockerfile.
+- Create DockerCompose file to deploy all components.
+- Build and run the Docker containers using the following command
+  
+```console
+docker-compose up --build -d
+```
+- try to access PHPMyAdmin http://localhost:8001 and create a table
+
+![image](https://github.com/davabdallah/Robusta-Kubernetes/assets/71341750/446f6ca7-63e4-43db-910c-c637bf9c020b)
+
+- Update index.php file with that update
+- Rebuild the Docker containers again
+
+
 
 ## Create Docker Image for Php application 
    #### - Create index.php and Dockerfile 
@@ -15,7 +39,7 @@
       docker bush davabdallah/php-image:1.4
   ```
 
-## Build the web application in kubernetes
+## Deploy the web application in kubernetes
    ### 1. Create Mysql
    
 #### - Create Storage Class, PV and PVC for mysql
