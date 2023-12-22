@@ -25,7 +25,8 @@ pipeline {
                     // Fetch Helm chart from Git repository
                     sh "git clone -b ${GIT_BRANCH} ${GIT_REPO_URL} temp-git-repo"
                     sh "cp -r temp-git-repo/${HELM_CHART_PATH} ."
-
+                    // Install or upgrade Helm chart
+                    sh "helm upgrade --install ${HELM_RELEASE_NAME} ./${HELM_CHART_PATH} --namespace ${K8S_NAMESPACE}"
                 }
             }
         }
