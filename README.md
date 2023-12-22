@@ -13,7 +13,7 @@
   
   ```console
       docker bush davabdallah/php-image:1.4
- ```
+  ```
 
 ## 2. Start to build the web application in kubernetes
    ### 1. The below Steps to Install Mysql
