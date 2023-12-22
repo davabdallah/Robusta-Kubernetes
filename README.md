@@ -10,7 +10,7 @@
 - Create a directory for your PHP application
 - Create [DockerFile](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/local_machine/php-app/Dockerfile) for PHP
 - Create index.php file in the same directory with Dockerfile.
-- Create [DockerCompose] (https://github.com/davabdallah/Robusta-Kubernetes/blob/master/local_machine/Docker-Compose.yaml) file to deploy all components.
+- Create [DockerCompose](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/local_machine/Docker-Compose.yaml) file to deploy all components.
 - Build and run the Docker containers using the following command
   
 ```console
