@@ -8,9 +8,9 @@
 ##### - The steps on my local Machine
 
 - Create a directory for your PHP application
-- Create [DockerFile]() for PHP
+- Create [DockerFile](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/local_machine/php-app/Dockerfile) for PHP
 - Create index.php file in the same directory with Dockerfile.
-- Create DockerCompose file to deploy all components.
+- Create [DockerCompose] (https://github.com/davabdallah/Robusta-Kubernetes/blob/master/local_machine/Docker-Compose.yaml) file to deploy all components.
 - Build and run the Docker containers using the following command
   
 ```console
@@ -20,10 +20,13 @@ docker-compose up --build -d
 
 ![image](https://github.com/davabdallah/Robusta-Kubernetes/assets/71341750/446f6ca7-63e4-43db-910c-c637bf9c020b)
 
-- Update index.php file with that update
-- Rebuild the Docker containers again
+- Update [index.php] (https://github.com/davabdallah/Robusta-Kubernetes/blob/master/local_machine/php-app/index.php) file with that update
+- Rebuild the Docker containers again and try to access php http://localhost 
+
+![image](https://github.com/davabdallah/Robusta-Kubernetes/assets/71341750/d9ab3511-77c2-43a8-94b6-81d24b2da670)
 
 
+###
 
 ## Create Docker Image for Php application 
    #### - Create index.php and Dockerfile 
@@ -90,6 +93,13 @@ kubectl apply -f ./php
 kubectl apply -f ./phpadmin
 ```
 
+#### - Access the Adminer using ingress and create a table
+![image](https://github.com/davabdallah/Robusta-Kubernetes/assets/71341750/69287cbe-827c-4a6f-85e6-d1baa7aba622)
+
+### - Access PHP using ingress
+
+![image](https://github.com/davabdallah/Robusta-Kubernetes/assets/71341750/c557e26f-79cf-48ec-bdfa-5f3dc7b6cfb6)
+
 ### some tips here
 - Make sure that you can access php and phpadminer by added the Kubernetes public IP in your local hosts file
 - Make sure that you have added the sql service name in both php, phpadmin deployments and index.php as well.
@@ -125,6 +135,19 @@ helm package my-php-app-chart/my-php-app
 ```console
 helm install my-php-app my-php-app-chart/my-php-app-0.1.0.tgz
 ```
- 
+
+ ## Create Jenkins pipeline for CI/CD
+
+ - Open Jenkins in your web browser
+ - Create a new Jenkins pipeline job
+ - Configure your pipeline:
+ -     Select "Pipeline script from SCM" in the "Pipeline" section.
+ -     Choose your SCM and Enter the repository URL https://github.com/davabdallah/Robusta-Kubernetes.git
+ -     Specify the branch or tag to build (master)
+ -     use a [Jenkinsfile](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/Jenkinsfile) in my Git repository.
+ - Build the pipeline
+
+![image](https://github.com/davabdallah/Robusta-Kubernetes/assets/71341750/3a4315e1-08d2-4cfa-8821-947419fef9ca)
+
 
     
