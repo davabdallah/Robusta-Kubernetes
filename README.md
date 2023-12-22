@@ -18,13 +18,13 @@
 ## 2. Start to build the web application in kubernetes
    ### 1. The below Steps to Install Mysql
    
-### 1. Create Storage Class, PV and PVC for mysql
+#### - Create Storage Class, PV and PVC for mysql
 -  You can check the files [mysql-sc.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/mysql/01.%20mysql-sc.yaml), [mysql-pv.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/mysql/02.%20mysql-pv.yaml), [mysql-pvc.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/mysql/03.mysql-pvc.yaml)
 
-### 2. Create mysql secret for mysql password
+#### - Create mysql secret for mysql password
 -  You can check the files [mysql-secret.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/mysql/04.%20mysql-secret.yaml)
 
-### 3. Create mysql deployment file
+### - Create mysql deployment file
 -  You can check the files [mysql-secret.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/mysql/05.%20mysql-deplyment.yaml)
 -  Run the below command to create mysql
 
