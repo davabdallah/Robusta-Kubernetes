@@ -141,10 +141,10 @@ helm install my-php-app my-php-app-chart/my-php-app-0.1.0.tgz
  - Open Jenkins in your web browser
  - Create a new Jenkins pipeline job
  - Configure your pipeline:
-   -  Select "Pipeline script from SCM" in the "Pipeline" section.
-   - Choose your SCM and Enter the repository URL https://github.com/davabdallah/Robusta-Kubernetes.git
-   - Specify the branch or tag to build (master)
-   - use a [Jenkinsfile](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/Jenkinsfile) in my Git repository.
+ - Select "Pipeline script from SCM" in the "Pipeline" section.
+ - Choose your SCM and Enter the repository URL https://github.com/davabdallah/Robusta-Kubernetes.git
+ - Specify the branch or tag to build (master)
+ - use a [Jenkinsfile](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/Jenkinsfile) in my Git repository.
  - Build the pipeline
 
 ![image](https://github.com/davabdallah/Robusta-Kubernetes/assets/71341750/3a4315e1-08d2-4cfa-8821-947419fef9ca)
