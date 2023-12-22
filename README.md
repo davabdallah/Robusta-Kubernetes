@@ -26,6 +26,7 @@
 
 ### 3. Create mysql deployment file
 -  You can check the files [mysql-secret.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/mysql/05.%20mysql-deplyment.yaml)
+-  Run the below command to create mysql
 
 ```console
 kubectl apply -f ./mysql
