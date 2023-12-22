@@ -1,0 +1,9 @@
+mysql:
+  image: mysql:latest
+
+php:
+  image: davabdallah/php-image:1.4
+
+adminer:
+  image: adminer:latest
+

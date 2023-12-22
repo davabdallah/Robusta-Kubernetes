@@ -1,0 +1,5 @@
+apiVersion: v2
+name: myphp-app
+description: A Very Simple Helm chart for a PHP application with MySQL and Adminer
+version: 0.1.0
+
