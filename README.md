@@ -1,9 +1,9 @@
-# The steps to compelete the task
+# The steps to complete the task
 
-## The steps of creating sample web application (Php,MySQL, and Adminer)
-### Localy First
+## The steps of creating sample web application (PHP,MySQL,PHPAdminer)
+### Locally First
 - First step was trying to deploy the application on my local machine
-- I hvae used Docker desktop and VSC.
+- I have used Docker desktop and VSC.
 
 ##### - The steps on my local Machine
 
@@ -42,7 +42,7 @@ docker-compose up --build -d
       docker bush davabdallah/php-image:1.4
   ```
 
-## Deploy the web application in kubernetes
+## Deploy the web application in Kubernetes
    ### 1. Create MYSQL
    
 #### - Create Storage Class, PV and PVC for mysql
