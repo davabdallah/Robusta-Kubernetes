@@ -30,7 +30,7 @@
 ### - Create mysql service
 -  You can check the files [mysql-service.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/mysql/06.%20mysql-service.yaml)
 
--  Run the below command to create mysql
+### - Run the below command to create mysql
 
 ```console
 kubectl apply -f ./mysql
