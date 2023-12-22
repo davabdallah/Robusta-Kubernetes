@@ -2,9 +2,9 @@
 ## The steps of creating sample web application (Php,MySQL, and Adminer)
 
 ## 1. Create Docker Image for Php application 
-   #### 1. create index.php and Dockerfile 
+   #### - create index.php and Dockerfile 
 - You can find the files inside index directory (https://github.com/davabdallah/Robusta-Kubernetes/tree/master/index)
-    #### 2. build the image and push it to my Docker hub repo using the below commands
+  #### - build the image and push it to my Docker hub repo using the below commands
   ```console
       docker build -t davabdallah/php-image:1.4 .
   '''
