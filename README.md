@@ -1,7 +1,7 @@
 # Here you can find the steps to compelete the task
 ## The steps of creating sample web application (Php,MySQL, and Adminer)
 
-## 1. Create Docker Image for Php application 
+## Create Docker Image for Php application 
    #### - Create index.php and Dockerfile 
 - You can find the files inside [index](https://github.com/davabdallah/Robusta-Kubernetes/tree/master/index)
   
@@ -15,7 +15,7 @@
       docker bush davabdallah/php-image:1.4
   ```
 
-## 2. Start to build the web application in kubernetes
+## Build the web application in kubernetes
    ### 1. The below Steps to create Mysql
    
 #### - Create Storage Class, PV and PVC for mysql
