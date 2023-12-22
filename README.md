@@ -36,7 +36,7 @@
 kubectl apply -f ./mysql
 ```
 
-### 3. The below Steps to create php
+### 2. The below Steps to create php
 ### - Create php deployment file
 -  You can check the files [php-deployment.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/php/01.%20php-deployment.yaml)
 
@@ -52,7 +52,7 @@ kubectl apply -f ./mysql
 kubectl apply -f ./php
 ```
 
-### 2. The below Steps to create php
+### 3. The below Steps to create php
 ### - Create phpadmin deployment file
 -  You can check the files [phpadmin-deployment.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/phpadmin/01.%20phpadmin-deployment.yaml)
 
@@ -66,5 +66,5 @@ kubectl apply -f ./php
 kubectl apply -f ./phpadmin
 ```
  
-   
+
     
