@@ -3,9 +3,10 @@
 
 ## 1. Create Docker Image for Php application 
    #### - Create index.php and Dockerfile 
-- You can find the files inside [index] (https://github.com/davabdallah/Robusta-Kubernetes/tree/master/index)
+- You can find the files inside [index](https://github.com/davabdallah/Robusta-Kubernetes/tree/master/index)
   
    #### - Build the image and push it to my Docker hub repo using the below commands
+  
   ```console
       docker build -t davabdallah/php-image:1.4 .
   '''
