@@ -20,7 +20,7 @@ docker-compose up --build -d
 
 ![image](https://github.com/davabdallah/Robusta-Kubernetes/assets/71341750/446f6ca7-63e4-43db-910c-c637bf9c020b)
 
-- Update [index.php] (https://github.com/davabdallah/Robusta-Kubernetes/blob/master/local_machine/php-app/index.php) file with that update
+- Update [index.php](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/local_machine/php-app/index.php) file with that update
 - Rebuild the Docker containers again and try to access php http://localhost 
 
 ![image](https://github.com/davabdallah/Robusta-Kubernetes/assets/71341750/d9ab3511-77c2-43a8-94b6-81d24b2da670)
