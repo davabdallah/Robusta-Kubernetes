@@ -43,7 +43,7 @@ docker-compose up --build -d
   ```
 
 ## Deploy the web application in kubernetes
-   ### 1. Create Mysql
+   ### 1. Create MYSQL
    
 #### - Create Storage Class, PV and PVC for mysql
 -  You can check the files [mysql-sc.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/mysql/01.%20mysql-sc.yaml), [mysql-pv.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/mysql/02.%20mysql-pv.yaml), [mysql-pvc.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/mysql/03.mysql-pvc.yaml)
@@ -63,7 +63,7 @@ docker-compose up --build -d
 kubectl apply -f ./mysql
 ```
 
-### 2. Create Php
+### 2. Create PHP
 #### - Create php deployment file
 -  You can check the files [php-deployment.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/php/01.%20php-deployment.yaml)
 
@@ -79,7 +79,7 @@ kubectl apply -f ./mysql
 kubectl apply -f ./php
 ```
 
-### 3. Create Phpadmin
+### 3. Create Adminer
 #### - Create phpadmin deployment file
 -  You can check the files [phpadmin-deployment.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/phpadmin/01.%20phpadmin-deployment.yaml)
 
