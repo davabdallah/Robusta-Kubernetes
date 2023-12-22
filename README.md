@@ -16,7 +16,7 @@
   ```
 
 ## 2. Start to build the web application in kubernetes
-   ### 1. The below Steps to Install Mysql
+   ### 1. The below Steps to create Mysql
    
 #### - Create Storage Class, PV and PVC for mysql
 -  You can check the files [mysql-sc.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/mysql/01.%20mysql-sc.yaml), [mysql-pv.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/mysql/02.%20mysql-pv.yaml), [mysql-pvc.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/mysql/03.mysql-pvc.yaml)
@@ -36,7 +36,31 @@
 kubectl apply -f ./mysql
 ```
 
-      
+### 2. The below Steps to create php
+### - Create php deployment file
+-  You can check the files [php-deployment.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/php/01.%20php-deployment.yaml)
+
+### - Create php service
+-  You can check the files [php-service.yaml](https://github.com/davabdallah/Robusta-Kubernetes/tree/master/php)
+
+### - Create php ingress
+-  You can check the files [php-ingress.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/php/02.%20php-ingress.yaml)
+
+### - Run the below command to create php
+
+```console
+kubectl apply -f ./php
+```
+
+### 2. The below Steps to create php
+### - Create phpadmin deployment file
+-  You can check the files [phpadmin-deployment.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/phpadmin/01.%20phpadmin-deployment.yaml)
+
+### - Create phpadmin service
+-  You can check the files [phpadmin-service.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/phpadmin/03.%20phpadmin-service.yaml)
+
+### - Create phpadmin ingress
+-  You can check the files [phpadmin-ingress.yaml](https://github.com/davabdallah/Robusta-Kubernetes/blob/master/phpadmin/02.%20phpadmin-ingress.yaml)
     
  
    
